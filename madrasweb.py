@@ -28,6 +28,10 @@ def about():
 def blog():
     return render_template('blog.html')
 
+@app.route("/contact.html")
+def contact():
+    return render_template('contact.html')
+
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
