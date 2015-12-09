@@ -1,9 +1,281 @@
-{% extends "newbase.html" %}
-{% block title %} - Home{% endblock %}
-{% block content %}
-{% if not session.logged_in %}
-    <p>You are not logged in.</p>
-{% else %}
-    <p>You are logged in.</p>
-{% endif %}
-{% endblock %}
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+
+<meta charset="UTF-8"/>
+
+<title>Leroy - Onepage Bootstrap HTML Template</title>
+
+<meta name="description" content="Onepage Multipurpose Bootstrap HTML Template">
+
+<meta name="author" content="">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="{{ url_for('static',filename='css/bootstrap.css' ) }}" rel="stylesheet" media="screen">
+<link href="{{ url_for('static',filename='css/font-awesome.css' ) }}" rel="stylesheet">
+<link href="{{ url_for('static',filename='css/animate.css' ) }}" rel="stylesheet">
+<link href="{{ url_for('static',filename='css/theme.css' ) }}" rel="stylesheet">
+
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+<!--wrapper start-->
+<div class="wrapper" id="wrapper">
+	
+	<!--header-->
+	<header>
+	<div class="banner row" id="banner">		
+        <div class="parallax text-center" style="background-image: url(static/img/chennai-train.jpg);">
+			<div class="parallax-pattern-overlay">
+				<div class="container text-center" style="height:580px;padding-top:170px;">
+					<a href="#"><img id="site-title" class=" wow fadeInDown" wow-data-delay="0.0s" wow-data-duration="0.9s" src="/static/img/kannagi.jpg" alt="logo"/></a>
+					<h2 class="intro wow zoomIn" wow-data-delay="0.4s" wow-data-duration="0.9s">Madras - the land of survivors</h2>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<div class="menu">
+		<div class="navbar-wrapper">
+			<div class="container">
+				<div class="navwrapper">
+					<div class="navbar navbar-inverse navbar-static-top">
+						<div class="container">
+							<div class="navArea">
+								<div class="navbar-collapse collapse">
+									<ul class="nav navbar-nav">
+										<li class="menuItem active"><a href="#wrapper">Home</a></li>
+										<li class="menuItem"><a href="#aboutus">About Us</a></li>
+										<li class="menuItem"><a href="#specialties">Areas of Chennai</a></li>
+										<li class="menuItem"><a href="#gallery">Donate to Flood Victims</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+	</header>
+		
+	<!--about us-->
+	<section class="aboutus" id="aboutus">
+	<div class="container">
+		<div class="heading text-center">
+			<img class="dividerline" src="static/img/sep.png" alt="">
+			<h2>About Madras</h2>
+			<img class="dividerline" src="static/img/sep.png" alt="">
+			<h3>
+                <p> There are two different theories for the origin of the name Chennai. The first theory is that it was derived from the name of Damal Chennappa Nayagar, father of Damarla Venkatapathy Nayak, a Nayak ruler who served as a general under Venkata III of the Vijayanagar Empire from whom the British acquired the town in 1639.[23][24] The first official use of the name Chennai is said to be in a sale deed, dated 8 August 1639, to Francis Day of the East India Company.[25] The second theory states that it was named after the Chenna Kesava Perumal Temple; the word Chenni in Tamil means face, with the temple regarded as the face of the city.[26] </p>
+                <p> The name Madras originated even before the British presence was established in India.[27] Madras was allegedly derived from Madraspattinam, a fishing-village north of Fort St George.[28] However, it is uncertain whether the name was in use before the arrival of European influence.[29] The British military mapmakers believed Madras was originally Mundir-raj or Mundiraj.[30] Madras might have also been derived from the word Madhu-ras meaning "honey" in Sanskrit.[31] </p>
+                <p> In 1996, the Government of Tamil Nadu officially changed the name from Madras to Chennai. At that time many Indian cities underwent a change of name.[31][32] However, the name Madras continues in occasional use for the city,[33] as well as for places named after the city such as University of Madras, IIT, Madras and Madras Medical College. </p>
+            </h3>
+		</div>			
+	</div>
+	</section>
+	
+	<!--specialties-->
+	<section class="specialties" id="specialties">
+	<div class="container">
+		<div class="heading text-center">
+			<img class="dividerline" src="static/img/sep.png" alt="">
+			<h2>Areas of Madras</h2>
+			<img class="dividerline" src="static/img/sep.png" alt="">
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="restmenuwrap">
+					<h3 class="maincat notopmarg text-center">North Chennai</h3>
+					<div class="restitem clearfix">
+						<p> Kodungaiyur East </p>
+                        <p> Kodungaiyur West </p>
+                        <p> Madhavaram </p>
+						<p> Puzhal </p>
+						<p> Moolakadai </p>
+						<p> Kolathur </p>
+						<p> Parry's Corner </p>
+						<p> Royapuram </p>
+						<p> Tiruvottiyur </p>
+						<p> Villivakkam </p>
+						<p> Perambur </p>
+						<p> Korukkupet </p>
+						<p> Tiruvottiyur </p>
+						<p> Vyasarpadi </p>
+						<p> Manali </p>
+						<p> Tondiarpet </p>
+						<p> Vallalar Nagar </p>
+						<p> Ennore </p>
+					</div>
+				</div>
+			</div>
+            <div class="col-md-4">
+                <div class="restmenuwrap">
+                    <h3 class="maincat notopmarg text-center">South Chennai</h3>
+                    <div class="restitem clearfix">
+                        <p> Meenambakkam </p>
+                        <p> Mylapore</p>
+                        <p> Perungudi</p>
+                        <p> Sholinganallur</p>
+                        <p> Alandur</p>
+                        <p> Adyar</p>
+                        <p> Besant Nagar</p>
+                        <p> Tiruvanmiyur</p>
+                        <p> Saidapet</p>
+                        <p> Guindy</p>
+                        <p> Madipakkam</p>
+                        <p> Nanganallur</p>
+                        <p> Velachery</p>
+                        <p> Pallikaranai</p>
+                        <p> Keelkattalai</p>
+                        <p> Kovilambakkam</p>
+                        <p> Thoraipakkam</p>
+                        <p> Neelankarai</p>
+                        <p> Injambakkam</p>
+                        <p> Chromepet</p>
+                        <p> Pallavaram</p>
+                        <p> Tambaram</p>
+                        <p> Medavakkam</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="restmenuwrap">
+                    <h3 class="maincat notopmarg text-center">West Chennai</h3>
+                    <div class="restitem clearfix">
+                        <p>Alapakkam</p>
+                        <p>Anna Nagar</p>
+                        <p>Padi</p>
+                        <p>Korattur</p>
+                        <p>Mogappair East</p>
+                        <p>Mogappair West</p>
+                        <p>Arumbakkam</p>
+                        <p>Avadi</p>
+                        <p>Pudur</p>
+                        <p>Maduravoyal</p>
+                        <p>Koyambedu</p>
+                        <p>Ashok Nagar</p>
+                        <p>KK Nagar</p>
+                        <p>Vadapalani</p>
+                        <p>Saligramam</p>
+                        <p>Virugambakkam</p>
+                        <p>Alwarthirunagar</p>
+                        <p>Valasaravakkam</p>
+                        <p>Nandambakkam</p>
+                        <p>Ramapuram</p>
+                        <p>Porur</p>
+                        <p>MMDA</p>
+                        <p>Poonamallee</p>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+	</section>
+	
+	<!--gallery-->
+	<section class="gallery" id="gallery">
+		<div class="container">
+			<div class="heading text-center">
+				<img class="dividerline" src="static/img/sep.png" alt="">
+				<h2>Donate to Flood Victims</h2>
+                <small>Madrasweb.com is not associated with any of these orgs and does not endorse them.</small>
+				<img class="dividerline" src="static/img/sep.png" alt="">
+			</div>
+            <div class="col-md-8" align="center">
+                <div class="restmenuwrap">
+                    <h3 class="maincat notopmarg text-center">Aid Organizations accepting donations</h3>
+                    <table class="table" align="center">
+                        <thead>
+                            <tr>
+                               <th>Organization Name</th>
+                               <th>Link</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>AID India</td>
+                            <td> <a href="https://secure.aidindia.org/donate/tnfloods">LINK</a></td>
+                        </tr>
+                        <tr>
+                            <td>Bhumi</td>
+                            <td> <a href="https://letzchange.org/projects/chennai-flood-relief/">LINK</a></td>
+                        </tr>
+                        <tr>
+                            <td>Chennai Micro Fund (RJ Balaji)</td>
+                            <td> <a href="https://twitter.com/rj_balaji/status/672426712307646464">LINK</a> </td>
+                        </tr>
+                        <tr>
+                            <td>Udhavum Karamgal(Helping Hands)</td>
+                            <td> <a href="https://www.myhelpinghands.org/index.php?com=40">LINK</a></td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+	</section>
+	
+	<!--footer-->
+	<section class="footer" id="footer">
+	<p class="text-center">
+		<a href="#wrapper" class="gototop"><i class="fa fa-angle-double-up fa-2x"></i></a>
+	</p>
+	<div class="container">
+		<p>
+			&copy; 2015 Copyright www.madrasweb.com<br>
+		</p>
+	</div>
+	</section>
+	
+</div><!--wrapper end-->
+
+<!--Javascripts-->
+<script type="text/javascript" src="{{ url_for('static', filename='js/jquery.js') }}" ></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/modernizr.js') }}" ></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.js') }}" ></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/menustick.js') }}" ></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/parallax.js') }}" ></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/easing.js') }}" ></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/wow.js') }}" ></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/smoothscroll.js') }}" ></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/masonry.js') }}" ></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/imgloaded.js') }}" ></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/classie.js') }}" ></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/colorfinder.js') }}" ></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/gridscroll.js') }}" ></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/contact.js') }}" ></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/common.js') }}" ></script>
+
+<script type="text/javascript">
+jQuery(function($) {
+$(document).ready( function() {
+  //enabling stickUp on the '.navbar-wrapper' class
+	$('.navbar-wrapper').stickUp({
+		parts: {
+		  0: 'banner',
+		  1: 'aboutus',
+		  2: 'specialties',
+		  3: 'gallery',
+		  4: 'feedback',
+		  5: 'contact'
+		},
+		itemClass: 'menuItem',
+		itemHover: 'active',
+		topMargin: 'auto'
+		});
+	});
+});
+</script>
+</body>
+</html>
